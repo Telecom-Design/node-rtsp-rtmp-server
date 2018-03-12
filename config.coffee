@@ -6,7 +6,7 @@ module.exports =
   ############################
 
   # Server listen port
-  serverPort: 80
+  serverPort: 8080
 
   # RTMP server listen port
   rtmpServerPort: 1935
@@ -31,10 +31,10 @@ module.exports =
   enableRTSP: true
 
   # Enable RTMP/RTMPE server (not including RTMPT)
-  enableRTMP: true
+  enableRTMP: false
 
   # Enable RTMPT/RTMPTE server
-  enableRTMPT: true
+  enableRTMPT: false
 
   # Enable HTTP server
   enableHTTP: true
@@ -57,10 +57,10 @@ module.exports =
 
   # For receiverType == 'tcp' or 'udp'
   receiverListenHost      : '0.0.0.0'
-  videoControlReceiverPort: 1111
-  audioControlReceiverPort: 1112
-  videoDataReceiverPort   : 1113
-  audioDataReceiverPort   : 1114
+  videoControlReceiverPort: 8011
+  audioControlReceiverPort: 8012
+  videoDataReceiverPort   : 8013
+  audioDataReceiverPort   : 8014
 
   # For receiverType == 'tcp'
   receiverTCPBacklog: 511

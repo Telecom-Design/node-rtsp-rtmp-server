@@ -9,12 +9,12 @@ build:
 run:
 	(docker start ${DOCKER_IMAGE_NAME}) || \
 	docker run \
-  -p 80:80 -p 1935:1935 \
+  -p 8080:8080 -p 1935:1935 \
   --name ${DOCKER_IMAGE_NAME} -d ${USER}/${DOCKER_IMAGE_NAME}
 
 console:
 	docker run -it \
-  -p 80:80 -p 1935:1935 \
+  -p 8080:8080 -p 1935:1935 \
   -e an_env_var=${HIDDEN_ENV} \
   ${USER}/${DOCKER_IMAGE_NAME} bash
 
